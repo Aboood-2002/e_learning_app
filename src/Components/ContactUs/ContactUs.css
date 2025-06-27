@@ -1,0 +1,253 @@
+/* General Styles */
+.contactus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    font-family: "Poppins", sans-serif;
+}
+.title {
+    background-color: #222;
+    width: 105%; 
+    height: 300px;
+    color: #fff;
+    margin-top: -40px;
+    align-items: center;
+    
+}
+
+.contactus h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contactus h1 span {
+    color: #00CBB8;
+}
+
+.contactus p {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+/* Contact Information Section */
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    width: 100%;
+    max-width: 1100px;
+    margin-top: 30px;
+}
+
+/* Left Info Section */
+.leftinfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.leftinfo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.3;
+    color: #222;
+}
+
+.contactcards_1,
+.contactcards_2 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Contact Cards */
+.card_1, .card_2 {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    transition: all 0.3s ease;
+    align-items: start;
+    justify-content: start;
+}
+
+.card_1:hover, .card_2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.card_1 h4, .card_2 h4 {
+    font-size: 20px;
+    color: #00CBB8;
+    margin-bottom: 5px;
+}
+
+.card_1 p, .card_2 p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Right Info (Contact Form) */
+.rightinfo {
+    flex: 1;
+    background: #EBF5F4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.rightinfo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+}
+
+.rightinfo p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.rightinfo form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rightinfo input,
+.rightinfo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s ease-in-out;
+}
+
+.rightinfo input:focus,
+.rightinfo textarea:focus {
+    border-color: #00CBB8;
+    outline: none;
+}
+
+.rightinfo button {
+    background-color: #00CBB8;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.rightinfo button:hover {
+    background-color: #009c97;
+}
+
+/* Map Section */
+.map-container {
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.map-container:hover {
+    transform: scale(1.05);
+}
+
+.map-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.map-overlay {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.map-container:hover .map-overlay {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftinfo,
+    .rightinfo {
+        width: 100%;
+    }
+
+    .contactcards_1,
+    .contactcards_2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactus h1 {
+        font-size: 28px;
+    }
+
+    .leftinfo h1,
+    .rightinfo h1 {
+        font-size: 24px;
+    }
+
+    .contactus p {
+        font-size: 16px;
+    }
+
+    .map-overlay {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 360px) {
+    .rightinfo form input,
+    .rightinfo form textarea {
+        font-size: 14px;
+    }
+
+    .rightinfo button {
+        font-size: 16px;
+    }
+}

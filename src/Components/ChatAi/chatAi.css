@@ -1,0 +1,316 @@
+/* ChatAi.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.total {
+    flex: 1;
+    min-height: 100vh;
+    padding-bottom: 15vh;
+    position: relative;
+    font-family: 'Outfit', sans-serif;
+    animation: fadeIn 1.5s;
+    background-color: white !important;
+}
+
+.total .nav_chat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    padding: 20px;
+    color: #585858;
+}
+
+.total .nav_chat img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.total .hello {
+    margin: 50px 0 ;
+    font-size: 56px !important;
+    color: #c4c7c5;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.total .hello span {
+    background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+}
+
+.total .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.total .card {
+    height: 200px;
+    padding: 15px;
+    background-color: #f0f4f9;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.total .card img {
+    width: 35px;
+    padding: 5px;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.total .card p {
+    color: #585858;
+    font-size: 17px;
+}
+
+.total .card:hover {
+    background-color: #dfe4ea;
+}
+
+.main_bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 0 20px;
+    margin: auto;
+}
+
+.conversation-list {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.conversation {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.conversation img.attachment-image {
+    width: 80px; /* Adjust size to your preference */
+    height: 80px; /* Adjust size to your preference */
+    object-fit: cover; /* Ensure image covers the area without distortion */
+    border-radius: 10px;
+    margin-bottom: 10px; /* Space between image and text */
+
+}
+
+.juster {
+    display: flex;
+    flex: 1;
+    flex-direction: column-reverse;
+    align-items: flex-end; /* Align items to the right */
+
+}
+
+.juster img {
+    display: flex;
+    align-items: flex-end;
+
+    justify-content: end;
+}
+
+.search_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #f0f4f9;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.search_box img {
+    width: 24px;
+    cursor: pointer;
+}
+
+.search_box input {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.search_box div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search_box img:hover {
+    background-color: #dfe4ea;
+}
+
+.total .bottom-info {
+    font-size: 13px;
+    margin: 15px auto;
+    text-align: center;
+    font-weight: 300;
+}
+
+.result {
+    padding: 0 5px;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.result::-webkit-scrollbar {
+    display: none;
+}
+
+.titleResult {
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.titleResult img {
+    width: 40px; /* Size of user icon */
+    border-radius: 50%;
+}
+
+.result img {
+    width: 40px; /* Size of user icon */
+    border-radius: 50%;
+}
+
+.resultData {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+.resultData img {
+    width: 40px; /* Size of user icon */
+    border-radius: 50%;
+}
+
+.loader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.loader hr {
+    border-radius: 4px;
+    border: none;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right, #9ed7ff, #ffffff, #9ed7ff);
+    background-size: 800px 50px;
+    height: 20px;
+    animation: loader 3s linear infinite;
+}
+
+@keyframes loader {
+    0% {
+        background-position: -800px 0px;
+    }
+    100% {
+        background-position: 800px 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main_bottom input {
+        flex: none;
+        width: 150px;
+    }
+
+    .main_bottom img {
+        width: 20px;
+    }
+
+    .search_box {
+        padding: 5px 10px;
+    }
+
+    .search_box div {
+        gap: 5px;
+    }
+}
+
+
+
+
+/* Styling for the code block container */
+.code-block-container {
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Header containing the programming language and copy button */
+.code-block-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Programming language label */
+.code-language {
+    font-weight: bold;
+    font-size: 12px;
+    color: #555;
+}
+
+/* Copy button styling */
+.copy-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.copy-button:hover {
+    background-color: #e6e6e6;
+}

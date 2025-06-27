@@ -1,0 +1,40 @@
+.profile-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.field-label {
+  color: #374151;
+  font-weight: 500;
+}
+
+.field-input {
+  text-align: right;
+}
+
+.field-value {
+  color: #6b7280;
+}
+
+.field-input-element {
+  text-align: right;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #111827;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease;
+}
+
+.field-input-element:focus {
+  outline: 1px solid #3b82f6;
+  background-color: #f9fafb;
+}
+
+.field-input-element::placeholder {
+  color: #9ca3af;
+}

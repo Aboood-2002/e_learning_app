@@ -1,0 +1,172 @@
+/* General Styles */
+.Login-Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+    padding: 40px;
+    background: linear-gradient(to right, #00CBB8, #008080);
+    min-height: 100vh;
+}
+
+/* Image Styling */
+.Login-Container img {
+    width: 45%;
+    max-width: 450px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Login Form */
+.Login-Form {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 450px;
+    text-align: center;
+}
+
+/* Heading */
+.Login-Form h1 {
+    font-size: 34px;
+    color: #00CBB8;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Buttons Section */
+.Login-Buttons {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.Login-Buttons .Login-SignIn, 
+.Login-Buttons .Login-Register {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.Login-Buttons .Login-SignIn {
+    background-color: #008080 !important;
+    color: white;
+}
+
+.Login-Buttons .Login-Register {
+    background-color: #00CBB8;
+    color: white;
+}
+
+.Login-Buttons .Login-SignIn:hover, 
+.Login-Buttons .Login-Register:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* Form Section */
+.Login-Fields {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    align-items: center;
+}
+
+.Login-Fields p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.Login-Fields input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+.Login-Fields input:hover, .Login-Fields input:focus {
+    border-color: #00CBB8;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+/* Remember Me */
+.Login-RememberMe {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Login-RememberMe label {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Login Button */
+.Login-Form .Login-SignIn {
+    background-color: #00CBB8;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.Login-Form .Login-SignIn:hover {
+    background-color: #008080;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .Login-Container {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .Login-Container img {
+        width: 60%;
+    }
+
+    .Login-Form {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .Login-Buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Login-Container img {
+        width: 80%;
+    }
+
+    .Login-Form {
+        width: 100%;
+        padding: 30px;
+    }
+}
+

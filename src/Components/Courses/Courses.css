@@ -1,0 +1,206 @@
+.Corses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Corses h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid #4caf50;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.courses_cardes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.course_card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 2rem;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.course_card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    background: #4caf50;
+    color: #fff;
+}
+
+.course_card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.course_card:hover img {
+    transform: scale(1.1);
+}
+
+.course_card h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: inherit;
+}
+
+.course_card p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+    .courses_cardes {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 1rem;
+    }
+
+    .course_card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .Corses h1 {
+        font-size: 1.5rem;
+    }
+
+    .courses_cardes {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.Recommended , .Design , .development , .programming , .Business , .Marketing , .viewes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.Recommended h2 , .Design h2 , .development h2 , .programming h2 , .Business h2 , .Marketing h2 , .viewes h2
+{
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+.Recommended , .development , .Business , .viewes{
+  
+    background-color: #9DCCFF;
+}
+ 
+.Design , .programming , .Marketing {
+    
+    background-color: white;
+}
+.courses {
+ 
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.courses:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);}
+
+    .duratiion {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    
+    .duratiion p {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .course_img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .course_img:hover {
+        transform: scale(1.1);
+    }
+    
+    h6 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #222;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.6;
+    }
+    
+    @media (max-width: 768px) {
+        .Recommended , .Design , .development , .programming , .Business , .Marketing , .viewes {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .python, .E-Commerce, .E-BUSINESS, .javascript , .UIUX , .Adobe_Photoshop , .Adobe_illustrator , .Adobe_Xd , .Software , .Cplud , .marketing  {
+            width: 90%;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .Recommended h2 , .Design h2 , .development h2 , .programming h2 , .Business h2 , .Marketing h2 , .viewes h2 {
+            font-size: 24px;
+        }
+    
+        h6 {
+            font-size: 18px;
+        }
+    
+        p {
+            font-size: 14px;
+        }
+    }
+    

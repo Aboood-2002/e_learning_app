@@ -1,0 +1,544 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --primary-color: #2563eb;
+    --nav-bg: #f8fafc;
+    --footer-bg: #f1f5f9;
+  }
+  
+  /* Dark theme */
+  .dark {
+    --bg-color: #0f172a;
+    --text-color: #f8fafc;
+    --primary-color: #60a5fa;
+    --nav-bg: #1e293b;
+    --footer-bg: #1e293b;
+  }
+  /* 🌟 Search Bar Section */
+.searchbar {
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    padding: 20px;
+    justify-content: center;
+}
+
+.searchbar img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+/* 🔍 Fix Search Input & Button */
+.query {
+    display: flex;
+    align-items: center;
+    gap: 0; /* Removes extra space */
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    border: 2px solid #008080;
+}
+
+/* 📝 Input Field */
+.search-input {
+    padding: 12px;
+    width: 400px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+/* 🔘 Search Button */
+.search-btn {
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    background-color: #008080;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.search-btn:hover {
+    background-color: #005757;
+    transform: scale(1.05);
+}
+
+/* 🔘 Search & Option Buttons */
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.options button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #008080;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.options button:hover {
+    background-color: #005757;
+    transform: scale(1.05);
+}
+   /* Partners Dropdown */
+/* Dropdown container */
+.partners_dropdown {
+    position: absolute;
+    top: calc(90% + 10px);
+    left: 45%;
+    transform: translateX(-50%);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    padding: 15px;
+    z-index: 9999;
+  }
+  
+  /* The list */
+  .partners_dropdown ul {
+    list-style: none;
+    padding: 15px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.partners_dropdown li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.partners_dropdown svg {
+    width: 30px;
+    height: 30px;
+    color: #555;
+}
+
+  /* Hover effect */
+  .partners_dropdown ul li:hover {
+    background: #f0f0f0;
+  }
+/* Styles for the Book popup */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .popup-content h2 {
+    margin-bottom: 20px;
+  }
+  
+  .popup-content button {
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .popup-content button:hover {
+    background-color: #005bb5;
+  }
+  
+
+.ourFeatures {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.explor, .badge, .skills, .market {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+}
+
+.explor img, .badge img, .skills img, .market img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.explor h6, .badge h6, .skills h6, .market h6 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.explor p, .badge p, .skills p, .market p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Hover Effect */
+.explor:hover, .badge:hover, .skills:hover, .market:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.pressconfirance {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    background: #9dcfff;
+    border-radius: 20px;
+    padding: 60px;
+    width: 90%;
+    max-width: 1600px;
+    text-align: left; /* Align text properly */
+}
+
+/* Adjust text container */
+.press {
+    max-width: 500px;
+}
+
+.press h4 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.press p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Enhance Button */
+.learning {
+    display: inline-block;
+    background: #222;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.learning:hover {
+    background: #555;
+}
+
+/* Make Image Responsive */
+.pressconfirance img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+/* 📌 Recommendation Section */
+.Recommendtion {
+    display: flex;
+    flex-direction: column;
+    background: #9dcfff;
+    padding: 50px;
+    margin-top: 120px;
+    border-radius: 10px;
+}
+
+.Recommendtion h4 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* 📌 Course Cards */
+.recommend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-card {
+    width: 350px;
+    height: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+/* Fix Icon Alignment */
+.duratiion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.duratiion p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Improve Image Styling */
+.course-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* Add Hover Effect to Images */
+.course-card img:hover {
+    opacity: 0.85;
+}
+
+/* Improve Course Title */
+h6 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    margin-top: 10px;
+}
+
+
+/* 👨‍💼 Staff Section */
+.staff {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.staff h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    text-align: center;
+}
+
+/* Staff Members */
+.staffboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.staff_member {
+    width: 350px;
+    height: 450px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.staff_member:hover {
+    transform: scale(1.05);
+}
+
+.staff_member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.staff_desc {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+
+/* 📝 Feedback Section */
+.feedback {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    background: #f0f4ff; /* Soft blue background */
+    padding: 70px;
+    border-radius: 15px;
+}
+
+/* Styled and animated h1 */
+.feedback h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Flexible layout */
+.fedy {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Feedback text card */
+.feedback_text {
+    width: 380px;
+    height: auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.feedback_text:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile pictures on the right */
+.layers {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+/* 📱 Responsive Fixes */
+@media (max-width: 768px) {
+    .pressconfirance {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+    .press {
+        max-width: 100%;
+    }
+    .pressconfirance img {
+        max-width: 100%;
+    }
+}
+
+
+/* 📱 Responsive Fix */
+@media (max-width: 768px) {
+    .recommend {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .course-card {
+        width: 100%;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .fedy {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feedback {
+        padding: 50px;
+    }
+
+    .feedback_text {
+        width: 90%;
+    }
+}
+

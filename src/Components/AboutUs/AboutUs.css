@@ -1,0 +1,221 @@
+.AboutUs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 21px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.AboutUs h1 {
+    font-size: 36px;
+    color: #00CBB8;
+    font-weight: 700;
+    margin-bottom: 50px;
+    font-family: Poppins, sans-serif;
+    margin-top: 50px;
+    transition: color 0.3s ease-in-out;
+}
+
+.AboutUs h1:hover {
+    color: #2F327D;
+}
+
+.AboutUs h1 span {
+    color: #2F327D;
+}
+
+.AboutUs h2 {
+    font-size: 24px;
+    color: #636363;
+    margin-bottom: 24px;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.5;
+    text-align: start;
+}
+
+.AboutUs p {
+    font-size: 18px;
+    color: #636363;
+    margin-bottom: 30px;
+}
+
+.blueBarnare {
+    background-color: #00CBB8;
+    margin: auto;
+    width: 90%;
+    max-width: 500px;
+    padding: 24px;
+    border-radius: 15px;
+    color: whitesmoke !important;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.blueBarnare:hover {
+    background-color: #2F327D;
+    transform: scale(1.05);
+}
+
+.folks {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 50px;
+}
+
+.map {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 50px;
+}
+
+.OurMision, .OurCommitment {
+    width: 90%;
+    max-width: 700px;
+    text-align: left;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.OurMision ul, .OurCommitment ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.OurMision li, .OurCommitment li {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.OurMision li:hover, .OurCommitment li:hover {
+    color: #00CBB8;
+}
+
+.OurSuccessTeam {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.OurSuccessTeam img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.feedback-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.feedback-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.feedback-container form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
+
+.feedback-container input,
+.feedback-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+
+}
+
+.feedback-container input:focus,
+.feedback-container textarea:focus {
+    border-color: #007bff;
+}
+
+.feedback-container textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.feedback-container button {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.feedback-container button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .AboutUs h1 {
+        font-size: 28px;
+    }
+
+    .AboutUs h2 {
+        font-size: 20px;
+    }
+
+    .OurMision, .OurCommitment {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .AboutUs h1 {
+        font-size: 24px;
+    }
+
+    .AboutUs h2 {
+        font-size: 18px;
+    }
+
+    .blueBarnare {
+        padding: 15px;
+    }
+
+    .feedback-container {
+        max-width: 90%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 360px) {
+    .AboutUs h1 {
+        font-size: 20px;
+    }
+
+    .AboutUs h2 {
+        font-size: 16px;
+    }
+
+    .feedback-container button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}

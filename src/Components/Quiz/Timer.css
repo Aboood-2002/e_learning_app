@@ -1,0 +1,84 @@
+.timer-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.timer-display {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.timer-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.timer-icon.normal {
+  color: #3b82f6;
+}
+
+.timer-icon.warning {
+  color: #f59e0b;
+}
+
+.timer-icon.critical {
+  color: #ef4444;
+}
+
+.timer-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.timer-text.normal {
+  color: #1e40af;
+}
+
+.timer-text.warning {
+  color: #d97706;
+}
+
+.timer-text.critical {
+  color: #dc2626;
+}
+
+.timer-text.pulse {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.timer-bar-container {
+  flex: 1;
+  background-color: #e5e7eb;
+  border-radius: 0.375rem;
+  height: 0.75rem;
+  overflow: hidden;
+}
+
+.timer-bar {
+  height: 100%;
+  transition: all 1s linear;
+}
+
+.timer-bar.normal {
+  background-color: #3b82f6;
+}
+
+.timer-bar.warning {
+  background-color: #f59e0b;
+}
+
+.timer-bar.critical {
+  background-color: #ef4444;
+}

@@ -1,0 +1,49 @@
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 9999;
+  }
+  
+  .animation {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .loading-bar {
+    width: 120px;
+    height: 5px;
+    background: rgba(255, 0, 0, 0.3); /* Light red background */
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  .loading-bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: red;
+    border-radius: 5px;
+    animation: loadingFill 1s ease-in-out forwards;
+  }
+  
+  @keyframes loadingFill {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,127 @@
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 80px;
+    padding: 20px;
+    text-align: center;
+}
+
+.features h1 {
+    font-size: 36px;
+    color: #00CBB8;
+    font-weight: 700;
+}
+
+.features p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    color: #444;
+}
+
+.panarat {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 40px;
+}
+
+/* Alternating row styles */
+.panarat .panar1, .panar3, .panar5,
+.panarat .panar2, .panar4, .panar6 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Reverse layout for even rows */
+.panarat .panar2, .panar4, .panar6 {
+    flex-direction: row-reverse;
+}
+
+/* Image Styling */
+.panarat img {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.panarat img:hover {
+    transform: scale(1.05);
+}
+
+/* Text Container */
+.texty {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    max-width: 450px;
+}
+
+.texty h4 {
+    font-size: 24px;
+    color: #2F327D;
+}
+
+.texty h4 span {
+    font-weight: bold;
+    font-style: italic;
+    color: #33EFA0 !important;
+}
+
+.texty p {
+    font-size: 18px;
+    color: #636363;
+}
+
+/* Button Styling */
+.texty button {
+    background-color: #00CBB8;
+    color: white;
+    font-size: 16px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.texty button:hover {
+    background-color: #009688;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .panarat {
+        gap: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .features h1 {
+        font-size: 28px;
+    }
+    .panarat img {
+        width: 250px;
+    }
+    .texty {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .features h1 {
+        font-size: 24px;
+    }
+    .panarat {
+        gap: 60px;
+    }
+    .panarat img {
+        width: 200px;
+    }
+}

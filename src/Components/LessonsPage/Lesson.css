@@ -1,0 +1,262 @@
+/* Container: Two-column layout */
+.Lesson-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f0f3f8; /* Soft background */
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* ----- Left Sidebar ----- */
+  .Lesson-sidebar {
+    width: 300px; /* Fixed width for sidebar */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Card style for the side sections */
+  .Lesson-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Lesson-card h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+  /* List container */
+  .Lesson-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Individual items in the list */
+  .Lesson-item {
+    background-color: #ffffff;
+    border-left: 6px solid #00cbb8;
+    border-radius: 4px;
+    padding: 10px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .Lesson-item:hover {
+    background-color: #e9fcfb;
+    transform: translateX(3px);
+  }
+  
+  .Lesson-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Title & time styling */
+  .Lesson-title {
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .Lesson-time {
+    font-size: 12px;
+    color: #777;
+    background-color: #eef8f7;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-left: 10px;
+  }
+  
+  /* ----- Right Content ----- */
+  .Lesson-content {
+    flex: 1; /* Fills remaining space */
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    background-color:#00cbb8;
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .header h1 {
+    margin-left: 20px;
+
+  }
+  
+  .Lesson-content-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 25px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Lesson-content-card h1 {
+    font-size: 24px;
+    color: #2f327d;
+    margin-bottom: 10px;
+  }
+  
+  .subheading {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  
+  .Lesson-content-card h2 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .Lesson-content-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Advantages List */
+  .Lesson-advantages ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  
+  .Lesson-advantages li {
+    margin-bottom: 6px;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .lesson-page {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .lesson-sidebar {
+    flex: 1 1 250px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .lesson-sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .lesson-sidebar li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.95rem;
+  }
+  
+  .lesson-content {
+    flex: 3 1 600px;
+  }
+  
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .video-wrapper {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+  }
+  
+  .video-wrapper:hover {
+    transform: scale(1.03);
+  }
+  
+  /* ----- RESPONSIVE ----- */
+  @media (max-width: 992px) {
+    .Lesson-container {
+      flex-direction: column;
+    }
+  
+    .Lesson-sidebar {
+      width: 100%;
+      flex-direction: row;
+      gap: 20px;
+      overflow-x: auto; /* If needed for wide lists */
+    }
+  
+    .Lesson-card {
+      min-width: 260px; /* Ensure cards are readable on horizontal scroll */
+    }
+  
+    .Lesson-content {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Lesson-container {
+      padding: 10px;
+    }
+  
+    .Lesson-card h2 {
+      font-size: 16px;
+    }
+  
+    .Lesson-item {
+      padding: 8px;
+    }
+  
+    .Lesson-title {
+      font-size: 12px;
+    }
+  
+    .Lesson-time {
+      font-size: 10px;
+    }
+  
+    .Lesson-content-card {
+      padding: 15px;
+    }
+  
+    .Lesson-content-card h1 {
+      font-size: 20px;
+    }
+  
+    .Lesson-content-card h2 {
+      font-size: 18px;
+    }
+  
+    .Lesson-content-card p,
+    .Lesson-advantages li {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .Lesson-item {
+      border-left-width: 4px;
+    }
+    .Lesson-time {
+      padding: 2px 4px;
+    }
+  }
+  

@@ -1,0 +1,214 @@
+/* General container styling */
+.cloud {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 371px;
+}
+
+/* Achievements section */
+.cloud .achivement {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.cloud .achivement img {
+    width: 120px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cloud .achivement img:hover {
+    transform: scale(1.1);
+}
+
+/* Heading styles */
+.cloud h4 {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #00CBB8;
+    margin-top: 131px;
+}
+
+.cloud h4 span {
+    color: #2F327D;
+}
+
+/* Cards container */
+.cardat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+/* Individual card styling */
+.card1, .card2, .card3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 340px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card1:hover, .card2:hover, .card3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card1 img, .card2 img, .card3 img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.card1 h6, .card2 h6, .card3 h6 {
+    font-size: 20px;
+    color: #2F327D;
+    margin-bottom: 10px;
+}
+
+.card1 p, .card2 p, .card3 p {
+    font-size: 16px;
+    color: #636363;
+}
+
+/* Section title */
+.cloud h1 {
+    font-size: 42px;
+    color: #00CBB8;
+    margin-top: 80px;
+}
+
+.cloud h1 span {
+    color: #2F327D;
+}
+
+.cloud p {
+    font-size: 18px;
+    max-width: 800px;
+    margin-top: 15px;
+    color: #444;
+}
+
+/* FCI section */
+.fci {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.fci .para {
+    max-width: 450px;
+    text-align: left;
+}
+
+.fci h5 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2F327D;
+    margin-top: -50px;
+    margin-left: 50px;
+}
+
+.fci h5 span {
+    color: #00CBB8;
+}
+
+.fci p {
+    font-size: 16px;
+    color: #636363;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.fci .buble {
+    margin-left: 15px;
+}
+.fci .bubleo {
+    margin-left: 360px;
+}
+
+/* Images */
+.imgy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.imgy .video {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imgy .video:hover {
+    transform: scale(1.1);
+}
+
+/* Background elements */
+.imgy .squargreen, .imgy .squarblue {
+    position: absolute;
+    z-index: -1;
+    width: 120px;
+    height: auto;
+}
+
+.imgy .squargreen {
+    margin-top: 90px;
+    margin-left: 200px;
+}
+
+.imgy .squarblue {
+    margin-top: -10px;
+    margin-left: -200px;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .cardat {
+        flex-direction: column;
+    }
+    .fci {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .cloud h4 {
+        font-size: 28px;
+    }
+    .cloud h1 {
+        font-size: 32px;
+    }
+    .card1, .card2, .card3 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cloud h4 {
+        font-size: 24px;
+    }
+    .cloud h1 {
+        font-size: 28px;
+    }
+}
