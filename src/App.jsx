@@ -32,7 +32,9 @@ import Quizzes from "./Components/Dashboard/pages/Quizzes";
 import Students from "./Components/Dashboard/pages/Students";
 import ForgetPassword from "./Components/Registertion/Forget-Password/forgetPassword"
 import Performance from "./Components/Dashboard/pages/Performance";
-
+import InstructorOverview from "./Components/Dashboard/pages/InstructorOverview";
+import Lessons from "./Components/Dashboard/pages/Lessons";
+import Questions from "./Components/Dashboard/pages/Questions";
 // Helper to detect current path
 const Layout = ({ children }) => {
   const location = useLocation();
@@ -85,12 +87,15 @@ const App = () => {
           <Route path="/payment/success" element={!user ?<Navigate to="/" />:<PaymentSuccess />} />
           <Route path="/payment/cancel" element={!user ?<Navigate to="/" />:<PaymentCancel />} />
           <Route path="/dashboard" element={!user? <Navigate to="/" /> :<Dashboard/>} />
-          <Route path="/dashboard/studentCourses" element={!user ?<Navigate to="/" />:<StudentCourses/>} />
+          <Route path="/dashboard/courses" element={!user ?<Navigate to="/" />:<StudentCourses/>} />
           <Route path="/mycourses/:id" element={!user ?<Navigate to="/" />:<CourseDetails/>} />
           <Route path="/dashboard/quizzes" element={!user? <Navigate to="/" /> :<Quizzes/>} />
           <Route path="/dashboard/students" element={!user? <Navigate to="/" /> :<Students/>} />
           <Route path="/forgetPassword" element={<ForgetPassword/>} />
           <Route path="/dashboard/performance" element={!user? <Navigate to="/" /> :<Performance/>} />
+          <Route path="/dashboard/instructor" element={!user? <Navigate to="/" /> :<InstructorOverview/>} />
+          <Route path="/dashboard/lessons" element={!user? <Navigate to="/" /> :<Lessons/>} />
+          <Route path="/dashboard/questions" element={!user? <Navigate to="/" /> :<Questions/>} />
         </Routes>
       </Layout>
     </Router>

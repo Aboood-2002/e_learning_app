@@ -14,7 +14,7 @@ const Sidebar = () => {
       roles: ['admin']
     },
     {
-      path: '/dashboard/studentCourses',
+      path: '/dashboard/courses',
       label: 'Courses',
       icon: '📚' ,
       roles: ['admin', 'student']
@@ -36,7 +36,25 @@ const Sidebar = () => {
       label: 'Performance',
       icon: '📊',
       roles: ['admin', 'student']
-    }
+    },
+    {
+      path: '/dashboard/instructor',
+      label: 'Instructor Overview',
+      icon: '📊',
+      roles: ['admin', 'instructor']
+    },
+    {
+      path: '/dashboard/lessons',
+      label: 'Lessons',
+      icon: '📊',
+      roles: ['admin', 'instructor']
+    },
+    {
+      path: '/dashboard/questions',
+      label: 'Questions',
+      icon: '📊',
+      roles: ['admin', 'instructor']
+    },
   ];
 
   const filteredNavItems = navItems.filter(item => 

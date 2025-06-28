@@ -21,7 +21,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px;
-    background-color: #2C3E50;;
+    background-color: #2C3E50 !important;
     height: 70px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     position: relative;
